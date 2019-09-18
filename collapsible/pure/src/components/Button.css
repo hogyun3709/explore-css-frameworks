@@ -1,0 +1,15 @@
+.Button {
+  cursor: pointer;
+}
+.Rotate {
+  animation: rotation 1.5s forwards;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}

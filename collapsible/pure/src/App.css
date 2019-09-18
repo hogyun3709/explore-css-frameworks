@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.App-container {
+  text-align: left !important;
+  background-color: green;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;

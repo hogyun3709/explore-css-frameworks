@@ -1,10 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import TextBox from "./components/TextBox";
+import Button from "./components/Button";
+import "./App.css";
 
 function App() {
+  const flexContainer = {
+    display: "flex",
+    justifyContent: "space-around",
+    backgroundColor: "tomato",
+    color: "white",
+    alignItems: "center"
+  };
   return (
     <div className="App">
+      <div style={flexContainer}>
+        <TextBox/>
+        <Button />
+      </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
