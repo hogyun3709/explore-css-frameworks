@@ -10,13 +10,6 @@ function App() {
   const rightCss = {
     float: "right"
   };
-
-  const fullCss = {
-    width: "100%"
-  };
-  const verticalAlgin = {
-    verticalAlign: "middle"
-  };
   return (
     <div>
       <Container>
