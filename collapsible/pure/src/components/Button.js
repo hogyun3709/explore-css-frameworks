@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./Button.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import "./Button.css";
 
 function useHover() {
   const ref = useRef();
@@ -32,9 +32,8 @@ function Button() {
   const [ref, hovered] = useHover();
   const icon = <FontAwesomeIcon icon={faAngleUp} size="lg" />;
 
-  const [clicked, setClicked] = useState(false);
   return (
-    <div className="Button" ref={ref} onClick={() => setClicked(!clicked)}>
+    <div className="Button" ref={ref}>
       <div className={hovered ? "Rotate" : ""}>{icon}</div>
     </div>
   );

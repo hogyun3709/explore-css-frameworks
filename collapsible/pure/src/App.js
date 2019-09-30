@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./logo.svg";
 import TextBox from "./components/TextBox";
 import Button from "./components/Button";
@@ -12,11 +12,18 @@ function App() {
     color: "white",
     alignItems: "center"
   };
+  const [showText, setShowText] = useState(false);
+
+  function handleClick() {
+    setShowText(!showText);
+  }
   return (
     <div className="App">
       <div style={flexContainer}>
-        <TextBox/>
-        <Button />
+        <TextBox />
+        <div onClick={handleClick}>
+          <Button />
+        </div>
       </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -31,6 +38,9 @@ function App() {
         >
           Learn React
         </a>
+        <div className={showText ? "App-test" : ""}>
+          <p>Hello</p>
+        </div>
       </header>
     </div>
   );

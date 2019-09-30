@@ -2,7 +2,7 @@
   cursor: pointer;
 }
 .Rotate {
-  animation: rotation 1.5s forwards;
+  animation: rotation 0.8s forwards;
 }
 
 @keyframes rotation {
