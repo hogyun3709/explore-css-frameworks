@@ -30,6 +30,16 @@
 .App-test {
   color: tomato;
 }
+.App-content {
+  max-height: App-close;
+  overflow: hidden;
+}
+.App-open {
+  max-height: inherit;
+}
+.App-close {
+  max-height: 0px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
